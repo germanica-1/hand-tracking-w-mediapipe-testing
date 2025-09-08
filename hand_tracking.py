@@ -5,7 +5,7 @@ import time
 # Initialize video capture
 cap = cv2.VideoCapture('') #camera here
 
-# Initialize MediaPipe Hands and Drawing utilities
+# Initialize MediaPipe Hands and Drawing util
 mpHands = mp.solutions.hands
 hands = mpHands.Hands(static_image_mode=False, max_num_hands=1, min_detection_confidence=0.5, min_tracking_confidence=0.5)
 mpDraw = mp.solutions.drawing_utils
